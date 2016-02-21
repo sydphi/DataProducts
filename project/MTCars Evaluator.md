@@ -1,9 +1,11 @@
 MTCars Evaluator
 ========================================================
-author: S. Philips
+author: S. Phillips
 date: 
 autosize: true
 
+
+repo: https://github.com/sydphi/DataProducts/tree/master/project
 
 Overview of MTCars Evaluator
 ========================================================
@@ -20,7 +22,7 @@ xlab="Number of Cylinders", ylab="Miles Per Gallon")
 
 List of Cars 
 ========================================================
-In addition to the boxplot, a list of cars that fit the values from the sliders will be renderd.
+In addition, a list of cars will appear below the boxplot that fit within the values from the sliders.
 
 
 |                  |  mpg| cyl| disp|  hp| drat|    wt|  qsec| vs| am| gear| carb|
