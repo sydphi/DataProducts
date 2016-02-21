@@ -5,24 +5,27 @@ date:
 autosize: true
 
 
-repo: https://github.com/sydphi/DataProducts/tree/master/project
+* App: https://sydphi.shinyapps.io/Courser_Data_Products_Project/
+* Repo: https://github.com/sydphi/DataProducts/tree/master/project
 
-Overview of MTCars Evaluator
+
+How to Use the MTCars Evaluator
 ========================================================
 
-The MTCars Evlautor has a left panel with sliders for selecting ranges for the QSEC and HP variables.  A boxplot on in the right panel will refresh to show gas mileage of car models in that range. 
+Adjust the sliders on the left panel to select the QSEC and HP variables of cars to be evaluated.  As the sliders are adjusted, a boxplot on in the right panel will refresh to show gas mileage of car models in that range. 
 
-
-```r
-boxplot(mpg~cyl,data=mtcars, main="Car Milage Data", 
-xlab="Number of Cylinders", ylab="Miles Per Gallon")
-```
-
-![plot of chunk unnamed-chunk-1](MTCars Evaluator-figure/unnamed-chunk-1-1.png)
+<img src="MTCars Evaluator-figure/unnamed-chunk-1-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
 
 List of Cars 
 ========================================================
 In addition, a list of cars will appear below the boxplot that fit within the values from the sliders.
+
+
+```r
+library(knitr)
+kable(head(mtcars))
+```
+
 
 
 |                  |  mpg| cyl| disp|  hp| drat|    wt|  qsec| vs| am| gear| carb|
