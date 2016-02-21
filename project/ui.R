@@ -2,7 +2,7 @@ library(shiny)
 
 
 shinyUI(pageWithSidebar(  
-        headerPanel("MTCars Gas Mileage Evaluator"),  
+        headerPanel("MTCars Evaluator"),  
         sidebarPanel(    
                 #sliderInput('cyl', 'Select Cylinders',value = 4, min = 4, max = 8, step = 2), 
                 sliderInput('qsec', 'Qtr Mile Time',value = c(14.50,22.9), min = 14.50, max = 22.9, step = 1), 
