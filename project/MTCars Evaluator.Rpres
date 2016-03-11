@@ -1,0 +1,56 @@
+MTCars Evaluator
+========================================================
+author: S. Phillips
+date: 
+autosize: true
+
+
+* App: https://sydphi.shinyapps.io/Courser_Data_Products_Project/
+* Repo: https://github.com/sydphi/DataProducts/tree/master/project
+
+
+How to Use the MTCars Evaluator
+========================================================
+
+Adjust the sliders on the left panel to select the QSEC and HP variables of cars to be evaluated.  As the sliders are adjusted, a boxplot on in the right panel will refresh to show gas mileage of car models in that range. 
+
+```{r fig.align='center', size=8, echo=FALSE}
+boxplot(mpg~cyl,data=mtcars, main="Car Milage Data", 
+xlab="Number of Cylinders", ylab="Miles Per Gallon")
+```
+
+List of Cars 
+========================================================
+In addition, a list of cars will appear below the boxplot that fit within the values from the sliders.
+
+```{r}
+library(knitr)
+kable(head(mtcars))
+```
+About the MTCars Data
+========================================================
+
+## Motor Trend Car Road Test Data (MTCars)
+
+The MTCars data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
+
+source: R MTCars Documentation
+
+MTCars Field Definitions
+=======
+
+A data frame with 32 observations on 11 variables.
+
+* mpg  - Miles/(US) gallon
+* cyl  - Number of cylinders
+* disp - Displacement (cu.in.)
+* hp   - Gross horsepower
+* drat - Rear axle ratio
+* wt   - Weight (1000 lbs)
+* qsec - 1/4 mile time
+* vs   - V/S
+* am   - Transmission (0 = automatic, 1 = manual)
+* gear - Number of forward gears
+* carb - Number of carburetors
+
+source: R MTCars Documentation
